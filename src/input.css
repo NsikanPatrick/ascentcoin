@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    @apply min-h-screen min-w-full flex items-center pl-5;
+}
+
+.menu-items{
+    @apply gap-10 z-[-1] md:z-auto md:static absolute bg-slate-600 md:bg-white md:inline-flex w-full md:py-4 
+     pb-4 pt-5 md:w-auto md:h-auto transition-all ease-in duration-500 mt-7 h-screen overflow-y-auto
+     md:mt-0 top-20 text-white md:text-indigo-900 text-center left-[-100%]
+}
+
+.menu-items.open { /* Add styles when the menu is open */
+    left: 0; /* Slide in from the left, hidden by default on mobile with  left-[-100%]*/
+  }
+
+.list-item{
+    @apply mx-4 my-6 md:my-0 md:mx-0;
+}
+
+.link{
+    @apply text-xl hover:text-cyan-500 duration-500;
+}
+
+.cta{
+    @apply bg-gradient-to-r from-purple-300 to-indigo-500 text-white text-base px-4 py-2 rounded-full;
+}

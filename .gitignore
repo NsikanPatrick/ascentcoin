@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+yarn.lock
+
+# Build Output
+.next/ # For Next.js projects
+out/ # For Nuxt.js projects
+public/build/ # For Create React App with eject
+build/ # For custom build scripts
+
+# Testing & Coverage
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary Files
+.DS_Store
+Thumbs.db
+*~
+
+# IDE & Editor Specific
+.vscode/ # Visual Studio Code
+.idea/ # JetBrains IDEs
+.eslintcache
+.stylelintcache
+
+# dotenv environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Browsersync
+# (you might only need this if you're using Browsersync locally)
+bsconfig.json
