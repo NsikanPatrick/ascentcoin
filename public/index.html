@@ -1,65 +1,101 @@
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
-
-<head>
+  <head>
     <!-- Mobile Specific Meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <!-- Favicon-->
-    <link rel="shortcut icon" type="image/png" sizes="32x32" href="images/myfavicon.ico">
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/myfavicon.ico"
+    />
     <!-- Author Meta -->
-    <meta name="author" content="Nsikan_Patrick">
+    <meta name="author" content="Nsikan_Patrick" />
     <!-- Meta Description -->
-    <meta name="description" content="">
+    <meta name="description" content="" />
     <!-- Meta Keyword -->
-    <meta name="keywords" content="">
+    <meta name="keywords" content="" />
     <!-- meta character set -->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <!-- Site Title -->
     <title>AscentCoin</title>
 
     <!-- CSS links ============================================= -->
 
     <!-- Remix icons ============================================= -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Output tailwind -->
     <link href="css/output.css" rel="stylesheet" />
-</head>
+  </head>
 
-<!-- <body class="bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee]"> -->
-    <body class="bg-indigo-900">
+  <!-- <body class="bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee]"> -->
+  <body class="">
+    <!-- SITE NAVBAR -->
     <nav
-        class="text-indigo-900 flex p-5 bg-white shadow md:flex justify-between items-center gap-10 fixed right-0 left-0 top-0 z-10">
-        <div class="flex justify-between align-center">
-            <span class="text-2xl font-[Poppins] cursor-pointer">
-                <!-- <img class="inline-flex" src="images/icon-api.svg"> -->
-                AscentCoin
-            </span>
-            <!-- <span class="menu-btn py-4 md:hidden">
+      class="navigation text-white h-24 flex p-5 bg-secondary-100 shadow md:flex justify-between items-center gap-10 fixed right-0 left-0 top-0 z-10"
+    >
+      <div class="flex justify-between align-center">
+        <span class="text-2xl font-[Poppins] cursor-pointer">
+          <!-- <img class="inline-flex" src="images/icon-api.svg"> -->
+          AscentCoin
+        </span>
+        <!-- <span class="menu-btn py-4 md:hidden">
                 <i class="ri-menu-3-fill text-3xl cursor-pointer text-cyan-500"></i>
             </span> -->
-        </div>
-        <ul class="menu-items font-[Poppins]">
-
-            <li class="list-item"><a class="link" href="#hero">Home</a></li>
-            <li class="list-item"><a class="link" href="#about">About</a></li>
-            <li class="list-item"><a class="link" href="#contacts">Contact</a></li>
-            <li class="list-item"><a class="link" href="#blog">Blog</a></li>
-            <li class="list-item"><a class="link" href="#careers">Careers</a></li>
-            <button class="cta nav-cta link">Request A Meal</button>
-        </ul>
-        <button class="cta nav-cta link">Request A Meal</button>
-        <span class="menu-btn py-4 md:hidden">
-            <i class="ri-menu-3-fill text-3xl cursor-pointer text-indigo-900"></i>
-        </span>
+      </div>
+      <ul class="menu-items font-[Poppins]">
+        <li class="list-item"><a class="link" href="#hero">Home</a></li>
+        <li class="list-item"><a class="link" href="#about">About</a></li>
+        <li class="list-item"><a class="link" href="#contacts">Contact</a></li>
+        <li class="list-item"><a class="link" href="#blog">Blog</a></li>
+        <li class="list-item"><a class="link" href="#careers">Careers</a></li>
+        <!-- <button class="cta link">Request A Meal</button> -->
+      </ul>
+      <button class="cta link">Request A Meal</button>
+      <span class="menu-btn py-4 md:hidden">
+        <i class="ri-menu-3-fill text-3xl cursor-pointer text-white"></i>
+      </span>
     </nav>
+    <!-- END OF NAVBAR -->
 
+    <!-- SITE BODY -->
+    <!-- HERO SECTION -->
+    <div
+      class="hero container bg-secondary-100 bg-cover bg-center flex flex-col md:flex-row pl-20 pr-20 md:flex justify-evenly items-center"
+      style="background-image: url('img/7.jpg'); opacity: 1"
+    >
+        <div class="header-info text-white text-center ml-16 mt-28 md:mt-0 md:mx-10 md:my-0">
+          <h1 class="mb-5 text-4xl md:text-5xl font-normal font-[Poppins] leading-tight tracking-wide md:leading-snug md:tracking-wider">Your Best Crypto Startup Agency for Business</h1>
+            <p class="mb-10 text-2xl font-light font-[Poppins] leading-relaxed">Collaborative 
+              engineer impactful niches for business dramatically crossunit</p>
+              <div class="flex md:mx-32 md:flex gap-10">
+                <button class="cta link">Get Whitelisted</button>
+                <span class="flex items-center md:flex">
+                  <i class="ri-play-fill cursor-pointer cta link mr-4"></i>
+                  Presentation
+                </span>
+              </div>
+        </div>
+        <img class="header-img my-10 md:my-0 w-full md:w-1/2 lg:w-4/10" src="img/header-06.png" />
+    </div>
+
+    <!-- END OF HERO SECTION -->
+
+    <!-- END OF BODY -->
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>

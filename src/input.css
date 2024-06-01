@@ -6,15 +6,31 @@
     @apply min-h-screen min-w-full flex items-center pl-5;
 }
 
+.hero.container {
+  @apply mt-16;
+}
+
 .menu-items{
-    @apply gap-10 z-[-1] md:z-auto md:static absolute bg-slate-600 md:bg-white md:inline-flex w-full md:py-4 
-     pb-4 pt-5 md:w-auto md:h-auto transition-all ease-in duration-500 mt-7 h-screen overflow-y-auto
-     md:mt-0 top-20 text-white md:text-indigo-900 text-center left-[-100%]
+    @apply gap-10 z-[-1] bg-primary-50 md:bg-transparent opacity-90 md:z-auto md:static absolute md:inline-flex w-full md:py-4 
+     pb-4 pt-5 mt-4 md:w-auto md:h-auto transition-all ease-in duration-500 h-screen overflow-y-auto
+     md:mt-0 top-20 text-white md:text-white text-center left-[-100%]
 }
 
 .menu-items.open { /* Add styles when the menu is open */
     left: 0; /* Slide in from the left, hidden by default on mobile with  left-[-100%]*/
   }
+
+.navigation.sticky{
+    /* background-image: linear-gradient(-10deg, #000 0%, #343a40 120% ); */
+    @apply text-white h-24 flex p-5 bg-secondary-200 transition-all ease-in duration-500 
+    shadow md:flex justify-between items-center gap-10 fixed right-0 left-0 top-0 z-10
+    border-b border-white
+    /* padding: 23px 0; */
+}
+
+body.disabledScroll {
+  overflow: hidden;
+}
 
 .list-item{
     @apply mx-4 my-6 md:my-0 md:mx-0;
@@ -27,3 +43,7 @@
 .cta{
     @apply bg-gradient-to-r from-purple-300 to-indigo-500 text-white text-base px-4 py-2 rounded-full;
 }
+
+
+  
+  
