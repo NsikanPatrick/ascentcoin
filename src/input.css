@@ -7,7 +7,7 @@
 }
 
 .hero.container {
-  @apply mt-16;
+  @apply mt-10;
 }
 
 .menu-items{
@@ -22,7 +22,7 @@
 
 .navigation.sticky{
     /* background-image: linear-gradient(-10deg, #000 0%, #343a40 120% ); */
-    @apply text-white h-24 flex p-5 bg-secondary-50 transition-all ease-in duration-500 
+    @apply text-white h-24 flex p-5 bg-secondary-100 transition-all ease-in duration-500 
     shadow md:flex justify-between items-center gap-10 fixed right-0 left-0 top-0 z-10
     border-b border-white
     /* padding: 23px 0; */
@@ -41,7 +41,7 @@ body.disabledScroll {
 }
 
 .cta{
-    @apply bg-gradient-to-r from-purple-300 to-indigo-500 text-white text-base px-4 py-2 rounded-full;
+    @apply bg-gradient-to-r from-purple-300 to-indigo-500 text-white text-base px-6 py-2 rounded-full;
 }
 
 
