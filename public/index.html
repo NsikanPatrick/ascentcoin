@@ -43,7 +43,7 @@
   </head>
 
   <!-- <body class="bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee]"> -->
-  <body class="">
+  <body class="antialiased">
     <!-- SITE NAVBAR bg-primary-100 -->
     <nav
       class="navigation text-white h-24 flex p-5 bg-primary-100 shadow md:flex justify-between items-center gap-10 fixed right-0 left-0 top-0 z-10"
@@ -320,17 +320,92 @@
         <!-- END OF ACCORDION -->
       </div>
       <!-- END OF FAQ SECTION -->
+
+      <!-- CONTACT US SECTION -->
+      <div class="flex w-full min-h-screen justify-center items-center">
+        <div class="flex flex-col md:flex-row lg:flex-row md:space-x-6 overflow-hidden 
+        space-y-3 bg-primary-200 w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg
+         text-white">
+          <div class="contact-info flex flex-col justify-between space-y-6">
+            <div>
+              <h1 class="font-bold text-4xl tracking-wide">Contact us</h1>
+              <p class="p-2 text-cyan-50 text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet 
+                accusantium accusamus perspiciatis. Amet architecto fugiat, iure sit 
+                nulla temporibus ducimus!
+              </p>
+            </div>
+            <div class="flex flex-col space-y-6">
+              <div class="inline-flex space-x-2 items-center">
+                <i class="ri-phone-fill text-teal-300 text-xl"></i>
+                <span>+2347069079051</span>
+              </div>
+              <div class="inline-flex space-x-2 items-center">
+                <i class="ri-mail-fill text-teal-300 text-xl"></i>
+                <span>info@ascentcoin.com</span>
+              </div>
+              <div class="inline-flex space-x-2 items-center">
+                <i class="ri-home-3-fill text-teal-300 text-xl"></i>
+                <span>11 street, Abcd, Fgh</span>
+              </div>
+            </div>
+
+            <div class="flex space-x-4 text-lg">
+              <a href="#" id="facebook"><i class="ri-facebook-fill text-teal-300 text-xl"></i></a>
+              <a href="#" id="twitter"><i class="ri-twitter-x-fill text-teal-300 text-xl"></i></a>
+              <a href="#" id="linkedin"><i class="ri-linkedin-fill text-teal-300 text-xl"></i></a>
+              <a href="#" id="instagram"><i class="ri-instagram-fill text-teal-300 text-xl"></i></a>
+            </div>
+
+          </div>
+          <div class="contact-form relative">
+
+            <div class="absolute z-0 w-40 h-40 bg-teal-400 rounded-full -right-28 -top-28"></div>
+            <div class="absolute z-0 w-40 h-40 bg-teal-400 rounded-full -left-16 -bottom-16"></div>
+
+            <div class="relative z-1 bg-white rounded-xl shadow-lg p-8 mt-6 mb-6 text-gray-600 md:w-96">
+              <form action="" class="flex flex-col space-y-4">
+                <div>
+                  <label for="" class="text-sm">Name:</label>
+                
+                  <input type="text" placeholder="Your name" class="ring-1 ring-gray-300 w-full 
+                  rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-primary-200">
+                </div>
+
+                <div>
+                  <label for="" class="text-sm">Email Address:</label>
+                
+                  <input type="email" placeholder="Your email" class="ring-1 ring-gray-300 w-full 
+                  rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-primary-200">
+                </div>
+
+                <div>
+                  <label for="" class="text-sm">Your Message:</label>
+                
+                  <textarea placeholder="Message" rows="4" class="ring-1 ring-gray-300 w-full 
+                  rounded-md px-4 py-2 mt-2 outline-none focus:ring-1 focus:ring-primary-200"></textarea>
+                </div>
+
+                <button class="inline-block justify-center bg-primary-200 text-white py-2 px-4 
+                rounded-lg font-bold uppercase text-sm">Send Message</button>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- END OF CONTACT US SECTION -->
     </div>
     <!-- END OF BODY -->
 
     <!-- FOOTER SECTION -->
     <footer>
-      <div class="p-10 bg-primary-100 text-gray-200">
+      <div class="p-10 bg-primary-200 text-white">
         <div class="max-w-7xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
             <div class="mb-5">
               <h4 class="text-2xl pb-4">AscentCoin</h4>
-              <p class="text-gray-500">
+              <p class="">
                 <strong>Address:</strong> Some street address<br />
                 <strong>Phone:</strong> Some phone number<br />
                 <strong>Email:</strong> info@ascentcoin.com
@@ -339,7 +414,7 @@
 
             <div class="mb-5">
               <h4 class="pb-4">Useful Links</h4>
-              <ul class="text-gray-500">
+              <ul class="">
                 <li class="pb-4">
                   <i class="ri-play-fill text-secondary-200"></i
                   ><a href class="hover:text-secondary-200">Home</a>
@@ -365,7 +440,7 @@
 
             <div class="mb-5">
               <h4 class="pb-4">Our Services</h4>
-              <ul class="text-gray-500">
+              <ul class="">
                 <li class="pb-4">
                   <i class="ri-play-fill text-secondary-200"></i
                   ><a href class="hover:text-secondary-200">Design</a>
@@ -391,14 +466,14 @@
 
             <div class="mb-5">
               <h4 class="pb-4">Join Our Newsletter</h4>
-              <p class="text-gray-500 pb-2">
+              <p class="pb-2">
                 Join 25,000+ others and never miss out on new tips, tutorials
                 and more
               </p>
               <form class="flex flex-row flex-wrap">
                 <input
                   type="text"
-                  class="text-gray-500 w-2/3 p-2 focus:border-secondary-200"
+                  class="w-2/3 p-2 focus:border-secondary-200"
                   placeholder="email@example.com"
                 />
                 <button
@@ -412,7 +487,7 @@
         </div>
       </div>
 
-      <div class="w-full bg-gray-900 text-gray-500 px-10">
+      <div class="w-full bg-primary-100 text-gray-500 px-10">
         <div
           class="max-w-7xl flex flex-col sm:flex-row py-4 mx-auto justify-between items-center"
         >
@@ -434,22 +509,22 @@
             <a
               href=""
               class="w-10 h-10 rounded-full bg-secondary-200 hover:bg-secondary-50 mx-1 pt-1 inline-block"
-              ><i class="ri-play-fill"></i
+              ><i class="ri-facebook-fill"></i
             ></a>
             <a
               href=""
               class="w-10 h-10 rounded-full bg-secondary-200 hover:bg-secondary-50 mx-1 pt-1 inline-block"
-              ><i class="ri-play-fill"></i
+              ><i class="ri-twitter-x-fill"></i
             ></a>
             <a
               href=""
               class="w-10 h-10 rounded-full bg-secondary-200 hover:bg-secondary-50 mx-1 pt-1 inline-block"
-              ><i class="ri-play-fill"></i
+              ><i class="ri-linkedin-fill"></i
             ></a>
             <a
               href=""
               class="w-10 h-10 rounded-full bg-secondary-200 hover:bg-secondary-50 mx-1 pt-1 inline-block"
-              ><i class="ri-play-fill"></i
+              ><i class="ri-instagram-fill"></i
             ></a>
           </div>
         </div>
